@@ -1,3 +1,4 @@
+![123123123123123](https://user-images.githubusercontent.com/59672589/215430219-419b5f98-ffd3-45dc-9f78-e8f730cff2c6.png)
 ---
 # 💯 벼랑끝 알고리즘 스터디 📝
 
