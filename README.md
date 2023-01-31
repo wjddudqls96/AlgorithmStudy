@@ -69,4 +69,7 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.ne
 <br />
 
 ### 🎉 참여자 🎉
-<td align="center"><a href="https://github.com/jybin96"><img src="https://user-images.githubusercontent.com/59672589/215908571-a119cf3d-70f8-4fee-bce4-7d2139465a7b.png" width="100px;" alt=""/>         <br /><sub><b>dmstj920</b><br>정영빈</sub></a><br /></td>
+<td align="center"><a href="https://github.com/jybin96"><img src="https://user-images.githubusercontent.com/59672589/215908571-a119cf3d-70f8-4fee-bce4-7d2139465a7b.png" width="100px;" alt=""/></a><br /></td>
+<td align="center"><a href="https://github.com/tak19"><img src="https://user-images.githubusercontent.com/59672589/215909275-83b8457b-4760-413b-9231-d0b69589184a.png" width="100px;" alt=""/></a><br /></td>
+<td align="center"><a href="https://github.com/jybin96"><img src="https://user-images.githubusercontent.com/59672589/215908571-a119cf3d-70f8-4fee-bce4-7d2139465a7b.png" width="100px;" alt=""/></a><br /></td>
+
