@@ -14,40 +14,34 @@ public class 평병한_배낭 {
 		int N = Integer.parseInt(st.nextToken());
 		int K = Integer.parseInt(st.nextToken());
 		
-		int[] weight = new int[N];
-		int[] value = new int[N];
+		int[] weight = new int[N+1];
+		int[] value = new int[N+1];
 		
-		for(int i = 0 ; i < N ; i++) {
+		for(int i = 1 ; i <= N ; i++) {
 			st = new StringTokenizer(in.readLine());
 			weight[i] = Integer.parseInt(st.nextToken());
 			value[i] = Integer.parseInt(st.nextToken());
 		}
 		
-		int[][] dp = new int[N][K+1];
+		int[][] dp = new int[N+1][K+1];
 		
-		// i : 최대 베낭 무게
-		for(int i = 1 ; i <= K ; i++) {
-			// j : 물건들 index
-			for(int j = 0 ; j < N ; j++) {
-				// 베낭 무게가 물건의 index보다 크면 넣을 수 있음
-				if(weight[j] <= i) {
-					for(int k = 0 ; k < N ; k++) {
-						if( k != j) {
-							dp[k][i] = Math.max(dp[k][i], dp[j][i-weight[j]] + value[j]);
-						}
-					}
-//					dp[j][i] = Math.max(dp[j][i-1], dp[j][i]);
+		// i 번째 물건 
+		for(int i = 1 ; i <= N ; i++) {
+			// 무게 1에서 K까지  
+			for(int j = 1 ; j <= K ; j++) {
+				// 해당 무게에 물건을 담을 수 있는 경우 
+				if( j >= weight[i]) {
+					// 1에서 i번까지의 물건 중에 담을 수 있는 최대 무게 
+					dp[i][j] = Math.max(dp[i-1][j - weight[i]] + value[i], dp[i-1][j])  ;
 				}
-			}			
+				else {
+					dp[i][j] = dp[i-1][j];
+				}
+			}
+//			System.out.println(Arrays.toString(dp[i]));
 		}
 		
-		int max = 0;
-		for(int i = 0 ; i < N ; i++) {
-			System.out.println(Arrays.toString(dp[i]));
-			max = Math.max(max, dp[i][K]);
-		}
-		
-		System.out.println(max);
+		System.out.println(dp[N][K]);
 		
 	}
 }
