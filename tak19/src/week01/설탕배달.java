@@ -7,8 +7,8 @@ public class 설탕배달 {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
-		
 		int cnt = 0;
+		
 		while(true) {
 			//5kg 봉다리로 다 들 수 있음 이게 최선임!
 			if( n % 5 == 0) {
