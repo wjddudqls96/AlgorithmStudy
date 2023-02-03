@@ -37,5 +37,4 @@ public class 평범한배낭 {
 		System.out.println(dp[n][limit]);
 	}
 
-
 }
