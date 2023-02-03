@@ -8,7 +8,6 @@ public class 가장긴증가하는부분수열 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        
         int[] dp = new int[n+1];
         int[] arr = new int[n+1];
         
