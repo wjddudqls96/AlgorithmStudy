@@ -16,6 +16,7 @@ public class 가장긴증가하는부분수열 {
         for(int i = 1 ; i < n+1 ; i++){
             arr[i] = Integer.parseInt(st.nextToken());
         }
+        
         //각 자리 수가 자기 자신만 수열을 형성하는 경우로 1로 초기화
         for(int i = 1 ; i < n+1 ; i++){
             dp[i] = 1;
